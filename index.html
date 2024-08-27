@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Santiago</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main class="presentacion">
+        <div class="presentacion__imagen">
+            <img class="presentacion__imagen__logo" src="assets/Logo.png" alt="Logo Alura">
+        </div>
+        <div class="presentacion__selector">
+            <h2 class="presentacion__selector__titulo">Ingrese el texto en el cuadro</h2>
+            <textarea class="presentacion__selector__texto" id="entradaTexto" placeholder="Ingresa un texto" pattern="[a-z]{1,15}"></textarea>
+            <h3 class="presentacion__selector__info" id="acentosInfo"> Solo letras minúsculas y sin acentos<h3>
+            <div class="presentacion__selector__botones">
+                <button onclick="encriptarTexto();" class="presentacion__selector__botones__encriptar"> <p>Encriptar</p></button>
+                <button onclick="desencriptarTexto();" class="presentacion__selector__botones__desencriptar"><p>Desencriptar</p></button>
+            </div>
+        </div>
+        <div class="presentacion__resultado">
+            <h2 class="presentacion__selector__titulo">Resultado encriptación/desencriptación</h2>
+            <textarea class="presentacion__resultado__texto" id="resultadoTexto"></textarea>
+            <p class="presentacion__resultado__info" id="infoCopiar"> </p>
+            <button onclick="copiarTexto();" class="presentacion__resultado__copiar"><p>Copiar</p></button>
+        </div>
+    </main>
+    <footer class="footer">Desarrollado por Santiago Peña - 2024</footer>
+    <script src="app.js"></script>
+</body>
+</html>
